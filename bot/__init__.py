@@ -863,7 +863,7 @@ if ospath.exists('categories.txt'):
 if BASE_URL:
     Popen(f"gunicorn web.wserver:app --bind 0.0.0.0:{SERVER_PORT}", shell=True)
 
-srun(["qbittorrent-nox", "-d", "--profile=."])
+#srun(["qbittorrent-nox", "-d", "--profile=."])
 if not ospath.exists('.netrc'):
     srun(["touch", ".netrc"])
 srun(["cp", ".netrc", "/root/.netrc"])
@@ -891,7 +891,7 @@ def aria2c_init():
         dire = DOWNLOAD_DIR.rstrip("/")
         aria2.add_uris([link], {'dir': dire})
         sleep(3)
-        downloads = aria2.get_downloads()
+        downloads = ariua2.get_downloads()
         sleep(15)
         aria2.remove(downloads, force=True, files=True, clean=True)
     except Exception as e:
