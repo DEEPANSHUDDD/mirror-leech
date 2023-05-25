@@ -891,7 +891,7 @@ def aria2c_init():
         dire = DOWNLOAD_DIR.rstrip("/")
         aria2.add_uris([link], {'dir': dire})
         sleep(3)
-        downloads = ariua2.get_downloads()
+        downloads = aria2.get_downloads()
         sleep(15)
         aria2.remove(downloads, force=True, files=True, clean=True)
     except Exception as e:
