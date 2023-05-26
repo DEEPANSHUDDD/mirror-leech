@@ -344,7 +344,7 @@ def start_ml(extra, s_listener):
             sendMessage(gmsg, bot, message)
         else:
             Thread(target=add_gd_download, args=(link, f'{DOWNLOAD_DIR}{listener.uid}', listener, name, is_gdtot, is_udrive, is_sharer, is_sharedrive, is_filepress)).start()
-    elif is_mega_link(link):
+   # elif is_mega_link(link):
         #Thread(target=add_mega_download, args=(link, f'{DOWNLOAD_DIR}{listener.uid}/', listener, name)).start()
     elif isQbit and (is_magnet(link) or ospath.exists(link)):
         Thread(target=add_qb_torrent, args=(link, f'{DOWNLOAD_DIR}{listener.uid}', listener,
