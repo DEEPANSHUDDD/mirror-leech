@@ -1,4 +1,4 @@
-from random import SystemRandom
+'''from random import SystemRandom
 from string import ascii_letters, digits
 from os import makedirs
 from threading import Event
@@ -273,5 +273,5 @@ def add_mega_download(mega_link, path, listener, name, from_queue=False):
     executor.do(api.startDownload, (node, path, name, None, False, None))
     api.removeListener(mega_listener)
     if folder_api is not None:
-        folder_api.removeListener(mega_listener)
+        folder_api.removeListener(mega_listener)'''
 
